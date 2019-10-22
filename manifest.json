@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Plany PSk",
+	"version": "1.0",
+	
+	"description": "plany.tu.kielce.pl - Rozdziel tygodnie i wyczyść",
+	
+	"icons": {
+		"48": "icons/logo_psk_48.png"
+	},
+	
+	"content_scripts": [
+		{
+			"matches": ["*://plany.tu.kielce.pl/*"],
+			"js": ["remove_frames.js"]
+		}
+	]
+}
